@@ -1,0 +1,277 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container-index {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Top Navigation */
+.top-nav {
+    background-color: #ffffff;
+    padding: 10px 0;
+    text-align: center; /* Center contents horizontally */
+    margin: 20px 0 50px 0;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    display: inline-block; /* Make the list items display horizontally */
+}
+
+.top-nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color: #1f1f1f; /* Change text color */
+    position: relative; /* Ensure position is relative for absolute positioning of lines */
+}
+
+/* Green lines under links on hover */
+.top-nav ul li a:hover::after {
+    height: 2px; /* Set the height of lines on hover */
+}
+
+.top-nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Adjust the position of the lines */
+    left: 0;
+    width: 100%;
+    height: 0; /* Initially set the height to 0 */
+    background-color: #00FF00; /* Green color for lines */
+    transition: height 0.3s; /* Add smooth transition effect */
+}
+
+
+
+
+/* Header */
+.header {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    color: #333;
+}
+
+/* BODY */
+.container-index{
+
+    margin-bottom: 50px;
+}
+.container-index h1 {
+    color: #292828;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+.container-index p {
+    text-align: center;
+}
+.container-index img {
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Ensure the image does not exceed its container's width */
+    height: auto; /* Maintain the aspect ratio of the image */
+   
+   
+}
+.container-index1 h1 {
+    color: #292828;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.container-index1 {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center; /* Center-align content */
+}
+
+.Title {
+    color: red; /* Set text color to red */
+}
+
+.container-index1 h1,
+.container-index1 p {
+    margin-bottom: 20px; /* Add margin below h1 and p */
+}
+
+.requirements {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center items along the main axis */
+}
+
+.requirements img {
+    max-width: 5%; /* Set max width for images */
+}
+
+.right-content{
+    margin:auto;
+}
+
+
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    bottom: 0; /* Set the bottom position to 0 */
+    width: 100%;
+}
+
+
+
+/* Footer styles */
+.footer-styles {
+    color: #000000;
+    background: #ffffff;
+ 
+}
+
+.footer textarea {
+    resize: none;
+}
+
+.footer .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.footer .svg-inline--fa {
+    vertical-align: -0.200em;
+}
+
+.footer .rounded-social-buttons {
+    text-align: center;
+}
+
+.footer .rounded-social-buttons .social-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 3.125rem;
+    height: 3.125rem;
+    border: 0.125rem solid transparent;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #fefefe;
+    font-size: 1.5625rem;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 1.6875rem;
+    transition: all 0.5s ease;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.footer .rounded-social-buttons .social-button:hover, 
+.footer .rounded-social-buttons .social-button:focus {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.footer .rounded-social-buttons .fa-twitter, 
+.footer .fa-facebook-f, 
+.footer .fa-linkedin, 
+.footer .fa-tiktok, 
+.footer .fa-youtube, 
+.footer .fa-instagram {
+    font-size: 25px;
+}
+
+.footer .rounded-social-buttons .social-button.facebook {
+    background: #3b5998;
+}
+
+.footer .rounded-social-buttons .social-button.facebook:hover, 
+.footer .rounded-social-buttons .social-button.facebook:focus {
+    color: #3b5998;
+    background: #fefefe;
+    border-color: #3b5998;
+}
+
+.footer .rounded-social-buttons .social-button.twitter {
+    background: #55acee;
+}
+
+.footer .rounded-social-buttons .social-button.twitter:hover, 
+.footer .rounded-social-buttons .social-button.twitter:focus {
+    color: #55acee;
+    background: #fefefe;
+    border-color: #55acee;
+}
+
+.footer .rounded-social-buttons .social-button.linkedin {
+    background: #007bb5;
+}
+
+.footer .rounded-social-buttons .social-button.linkedin:hover, 
+.footer .rounded-social-buttons .social-button.linkedin:focus {
+    color: #007bb5;
+    background: #fefefe;
+    border-color: #007bb5;
+}
+
+.footer .rounded-social-buttons .social-button.tiktok {
+    background: #000000;
+}
+
+.footer .rounded-social-buttons .social-button.tiktok:hover, 
+.footer .rounded-social-buttons .social-button.tiktok:focus {
+    color: #000000;
+    background: #fefefe;
+    border-color: #000000;
+}
+
+.footer .rounded-social-buttons .social-button.youtube {
+    background: #bb0000;
+}
+
+.footer .rounded-social-buttons .social-button.youtube:hover, 
+.footer .rounded-social-buttons .social-button.youtube:focus {
+    color: #bb0000;
+    background: #fefefe;
+    border-color: #bb0000;
+}
+
+.footer .rounded-social-buttons .social-button.instagram {
+    background: #125688;
+}
+
+.footer .rounded-social-buttons .social-button.instagram:hover, 
+.footer .rounded-social-buttons .social-button.instagram:focus {
+    color: #125688;
+    background: #fefefe;
+    border-color: #125688;
+}
+
